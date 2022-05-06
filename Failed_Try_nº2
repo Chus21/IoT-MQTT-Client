@@ -1,0 +1,24 @@
+import {Blob} from 'buffer';
+import mqtt from 'mqtt';
+//const mqtt = require("mqtt");
+var client = mqtt.connect('mqtt://eolab.de:1883');
+
+client.on('connect', function() {
+    client.subscribe("weather/hsrw-kali");
+    console.log("Client has subscribed successfully");
+});
+   client.on('message', function(topic,message){
+       console.log(message.toString());
+
+
+       function saveStaticDataToFile() {
+
+
+        const blob = new Blob(["Welcome to Websparrow.org."],
+            { type: "text/csv,charset=utf-8" });
+        file = fopen ("C:\Users\Usuario\Desktop\PRACTICAS\MQTT-CLIENT\result.csv")
+        fwrite(blob, "C:\Users\Usuario\Desktop\PRACTICAS\MQTT-CLIENT\result.csv");
+    }
+    saveStaticDataToFile();
+   }
+   );
