@@ -1,0 +1,1 @@
+{"wind_speed":0.57,"wind_direction":258,"air_temperature":15.32,"air_relhumidity":51.81,"smp10":296,"pqsl":518.42,"soil_moisture":0.12,"soil_tempblue":19.59,"soil_tempred":17.12,"air_pressure":1022.91,"precipitation":0,"created_at":"2022-04-29T13:46:02.724Z"}
